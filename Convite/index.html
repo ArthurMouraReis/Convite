@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivite - Crie seu Convite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <img src="/Assets/Images/Background.svg" alt="Festivite" class="image-placeholder">
+            <h1 class="title">Festivite</h1>
+            <p class="subtitle">Crie um convite digital para o seu evento</p>
+        </div>
+        <div class="right-panel">
+            <h2>Crie seu convite</h2>
+            <form>
+                <section>
+                    <h3>Sobre o evento</h3>
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" placeholder="Nome do evento">
+
+                    <div class="datetime">
+                        <div>
+                            <label for="inicio">Início</label>
+                            <input type="text" id="inicio" placeholder="DD/MM/AAAA, --:--">
+                        </div>
+                        <div>
+                            <label for="fim">Fim</label>
+                            <input type="text" id="fim" placeholder="DD/MM/AAAA, --:--">
+                        </div>
+                    </div>
+
+                    <label for="tipo">Tipo</label>
+                    <div class="tipo">
+                        <input type="radio" id="presencial" name="tipo" checked>
+                        <label for="presencial">Presencial</label>
+                        <input type="radio" id="online" name="tipo">
+                        <label for="online">Online</label>
+                    </div>
+
+                    <label for="local">Local</label>
+                    <input type="text" id="local" placeholder="Link ou endereço">
+
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                </section>
+
+                <section>
+                    <h3>Personalização</h3>
+                    <label>Cor principal</label>
+                    <div class="color-options">
+                        <button class="color blue"></button>
+                        <button class="color purple"></button>
+                        <button class="color pink"></button>
+                        <button class="color red"></button>
+                        <button class="color orange"></button>
+                        <button class="color yellow"></button>
+                        <button class="color green"></button>
+                        <button class="color cyan"></button>
+                    </div>
+
+                    <label>Tema do evento</label>
+                    <div class="theme-options">
+                        <button class="theme active"><img src="/Assets/Icons/Bolo.svg" alt="Aniversário">Aniversário</button>
+                        <button class="theme"><img src="/Assets/Icons/Aniversário.svg" alt="Infantil">Infantil</button>
+                        <button class="theme"><img src="/Assets/Icons/Formatura.svg" alt="Formatura">Formatura</button>
+                        <button class="theme"><img src="/Assets/Icons/Casamento.svg" alt="Casamento">Casamento</button>
+                        <button class="theme"><img src="/Assets/Icons/Chá de bebê.svg" alt="Chá de bebê">Chá de bebê</button>
+                        <button class="theme"><img src="/Assets/Icons/Chá de panela.svg" alt="Chá de panela">Chá de panela</button>
+                        <button class="theme"><img src="/Assets/Icons/Carnaval.svg" alt="Carnaval">Carnaval</button>
+                        <button class="theme"><img src="/Assets/Icons/Páscoa.svg" alt="Páscoa">Páscoa</button>
+                        <button class="theme"><img src="/Assets/Icons/São João.svg" alt="São João">São João</button>
+                        <button class="theme"><img src="/Assets/Icons/Halloween.svg" alt="Halloween">Halloween</button>
+                        <button class="theme"><img src="/Assets/Icons/Natal.svg" alt="Natal">Natal</button>
+                        <button class="theme"><img src="/Assets/Icons/Outro.svg" alt="Outro">Outro</button>
+                    </div>
+
+                    <label for="estilo">Estilo</label>
+                    <div class="switch">
+                        <input type="checkbox" id="estilo">
+                        <label for="estilo">Escuro</label>
+                    </div>
+
+                    <label for="foto">Foto de capa</label>
+                    <input type="file" id="foto">
+                </section>
+
+                <section>
+                    <h3>Dados para contato</h3>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Nome completo" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="exemplo@email.com">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" placeholder="(99) 99999-9999">
+                </section>
+
+                <section class="terms">
+                    <input type="checkbox" id="termos" required>
+                    <label for="termos">Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></label>
+
+                    <div class="options">
+                        <input type="checkbox" id="promocoes-email">
+                        <label for="promocoes-email">Aceito receber atualizações e promoções por e-mail</label>
+
+                        <input type="checkbox" id="promocoes-sms">
+                        <label for="promocoes-sms">Aceito receber atualizações e promoções por SMS</label>
+                    </div>
+                </section>
+
+                <button type="submit" class="submit-button">Gerar convite</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
